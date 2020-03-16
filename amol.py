@@ -37,6 +37,7 @@ for expected_product in expected_product_list:
         #print("product_list: ",product.text)
          if product.text==expected_product:
                 product.click()
+
                 sleep(4)
 
                 p_window=driver.current_window_handle
