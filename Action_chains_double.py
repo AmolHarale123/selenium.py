@@ -18,18 +18,28 @@ sleep(4)
 tenders=driver.find_element_by_xpath("(//span[@class='menu-title'])[40]")
 sleep(2)
 action=ActionChains(driver)
-action.move_to_element(tenders).double_click().perform()
+action.move_to_element(tenders).perform()
+
+sleep(4)
+
+Aiims_tenders=driver.find_element_by_xpath("(//span[@class='menu-title'])[41]")
+action.move_to_element(Aiims_tenders).click().perform()
+
+
 
 sleep(4)
 tenders_title_list=[]
 
-tenders_title=driver.find_element_by_xpath("(//div[@style='float: left; width: 100%;'])")
-#action=ActionChains(tenders_title)
-action.move_to_element(tenders_title)
+tenders_title=driver.find_elements_by_xpath("//tbody/tr/td/a")
 
-#action.context_click("Tender Title").perform()
+for tenders in tenders_title:
+    print(tenders.text)
 
-#action.move_to_element(tenders_title).perform()
+
+
+
+
+
 sleep(3)
 
 
