@@ -27,11 +27,11 @@ action.move_to_element(Aiims_tenders).click().perform()
 
 
 
-sleep(4)
+sleep(2)
 tenders_title_list=[]
 
 tenders_title=driver.find_elements_by_xpath("//tbody/tr/td/a")
-
+sleep(2)
 for tenders in tenders_title:
     print(tenders.text)
 
