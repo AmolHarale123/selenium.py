@@ -9,9 +9,11 @@ sleep(4)
 print(driver.title)
 driver.maximize_window()
 sleep(4)
+selsct_custom=driver.find_element_by_xpath("(//span[@class='_5k_2 _5dba'])[3]")
+selsct_custom.click()
 
-
-selsct_custom=driver.find_element_by_xpath("//div[2]/div/div[2]/div/div/div/div[1]/form/div[1]/div[6]/span/span[3]/label").click()
+#selsct_custom=driver.find_element_by_xpath("//div/span/span[3]")
+#selsct_custom.click() -----------using full Xpath
 sleep(4)
 
 select_your_pronoun=driver.find_element_by_xpath('//select[@aria-label="Select your pronoun"]')
