@@ -9,7 +9,7 @@ driver.maximize_window()
 driver.switch_to.frame(0)
 sleep(4)
 #  dot(.) represents class in css selector
-#section_two_head = driver.find_element_by_css_selector("div[class='ui-id-3']")
+#section_two_head = driver.find_ele0ment_by_css_selector("div[class='ui-id-3']")
 # section_two_head = driver.find_element_by_css_selector(".ui-id-3")
 print("----section.......1----")
 content_head_1=driver.find_element_by_css_selector('div[aria-labelledby="ui-id-1"]>p')
